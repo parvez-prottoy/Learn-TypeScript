@@ -14,3 +14,7 @@ userDetails = (id, user) => {
     return `Hello, I'm ${user.name} and age is ${user.age}`;
 };
 userDetails(102, { name: "Parvez", age: 30 });
+// Rest Parameters
+let sumOfNumbers;
+sumOfNumbers = (...rest) => rest.reduce((prev, cur) => prev + cur, 0);
+console.log(sumOfNumbers(10, 32, 12, 3212, 32));
